@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pitter-Patter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <ul class="pages">
+    <li class="chat page">
+      
+      <div class="chatArea">
+        <p class="messages1">Pitter-Patter</p>
+        <p class="messages2">This is a safe place to say whatever you want to say.</p>
+        <p class="messages1" hidden=true></p>
+
+        <canvas class="whiteboard" ></canvas>
+      </div>
+      <input class="inputMessage" placeholder="Type here, then press return to send. (20 words max)"/>
+      <audio controls autoplay loop>
+          <source src="rain.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+    </li>
+    <li class="login page">
+      <div class="form">
+        <h3 class="title">What's your nickname?</h3>
+        <input class="usernameInput" type="text" maxlength="20" />
+      </div>
+    </li>
+  </ul>
+  <script src="p5.min.js"></script>
+  <script src="addons/p5.dom.min.js"></script>
+  <script src="addons/p5.sound.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
